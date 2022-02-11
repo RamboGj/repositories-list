@@ -1,0 +1,95 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: screen;
+    background-color: rgb(206, 198, 198);
+    display: flex;
+    margin: 1rem 10%;
+    position: fixed;
+}
+
+li {
+    list-style: none;
+    margin-top: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: green;
+}
+
+/* .searchbox {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    color:  #686256;
+    font-weight: bold;
+    background-color: rgb(206, 198, 198);
+
+    border: 0;
+    border-bottom: 1px solid #686256;
+} */
+
+.text-input{
+    overflow: hidden;  
+    margin-bottom: .875em;
+    margin-left: 5rem;
+}
+
+label{
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: .875em;
+}
+
+.searchbox {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0 0.5rem;
+    padding-left: 0;
+    background: none;
+    color: white;
+    font-size: 0.875em;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid gray;   
+    width: 15rem;
+}
+
+:focus + .separator {
+    transform: scaleX(1) translateY(-2px);   
+    opacity: 1;
+}
+
+.separator {
+    height:3px;
+    width: 15rem;
+    background: blue;
+    display: block;
+    transform: scaleX(0) translateY(-2px);
+    transform-origin: 50%;
+    opacity: 0;
+    transition: all .30s;
+}
+
+* :focus {
+    outline-color: transparent;
+    outline-style: none;
+  }
+
+.repoList {
+    position: fixed;
+    margin: 0 auto;
+}
+
